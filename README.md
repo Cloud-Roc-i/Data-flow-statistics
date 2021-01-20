@@ -24,3 +24,9 @@ A bigdata project with spark, kafka and flume
 * change or go away without deprecation.
 * Use {@link Connection#getAdmin()} to obtain an instance of {@link Admin} instead of constructing
 * an HBaseAdmin directly.
+4. python目录里是模拟产生日志的脚本，flume目录里的是flume的配置文件
+
+# 2021.1.20改动
+新增spark_web目录，该目录是一个完整的springboot项目，需要单独运行。主要功能是读取hbase中的数据进行可视化并在web上展示。
+页面端口和路径可查看src/main/resources/application.properties文件
+HTML代码用的是echart官方实例饼图，如需换成其他图表，可访问echart官网：https://echarts.apache.org/
